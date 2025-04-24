@@ -1,6 +1,6 @@
 {
 	"name": "svelte-excalidraw",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Thin Svelte wrapper for Excalidraw",
 	"scripts": {
 		"dev": "vite dev",
