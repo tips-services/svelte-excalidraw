@@ -32,7 +32,6 @@
   } from "@excalidraw/excalidraw/types";
 
   import React, { type JSX } from "react";
-  import "@excalidraw/excalidraw/index.css";
 
   // https://docs.excalidraw.com/docs/@excalidraw/excalidraw/api/props/
   interface Props {
@@ -113,3 +112,10 @@
     {/await}
   {/await}
 {/if}
+
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@excalidraw/excalidraw@0.18.0/dist/prod/index.css"
+  />
+</svelte:head>

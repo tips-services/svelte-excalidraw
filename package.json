@@ -1,6 +1,6 @@
 {
 	"name": "svelte-excalidraw",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Thin Svelte wrapper for Excalidraw",
 	"scripts": {
 		"dev": "vite dev",
@@ -10,7 +10,9 @@
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"clean": "npx -y rimraf build dist .svelte-kit node_modules",
+		"publish": "npm run clean && npm ci && npm run build && npm publish"
 	},
 	"exports": {
 		".": {
