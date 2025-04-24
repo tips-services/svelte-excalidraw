@@ -1,6 +1,6 @@
 {
 	"name": "svelte-excalidraw",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Thin Svelte wrapper for Excalidraw",
 	"scripts": {
 		"dev": "vite dev",
@@ -37,7 +37,7 @@
 	"homepage": "https://www.npmjs.com/package/svelte-excalidraw",
 	"peerDependencies": {
 		"svelte": "^5.0.0"
-	  },
+	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.0.1",
 		"@sveltejs/kit": "^2.5.7",
