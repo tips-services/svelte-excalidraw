@@ -27,5 +27,6 @@
 <style>
   div {
     height: 100%;
+    min-height: 350px;
   }
 </style>
