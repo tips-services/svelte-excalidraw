@@ -96,7 +96,9 @@
 </script>
 
 {#if browser}
-  {#await import("@excalidraw/excalidraw") then { Excalidraw }}
+  {#await import("@excalidraw/excalidraw")}
+    <div class="loadingBox">Loading Excalidraw...</div>
+  {:then { Excalidraw }}
     {#await import("@excalidraw/excalidraw").then((mod) => mod.MainMenu) then MainMenu}
       <ReactComponent
         excalidrawAPI={setAPI}
@@ -119,3 +121,13 @@
     href="https://unpkg.com/@excalidraw/excalidraw@0.18.0/dist/prod/index.css"
   />
 </svelte:head>
+
+<style>
+  .loadingBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+  }
+</style>
