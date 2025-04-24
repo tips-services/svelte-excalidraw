@@ -12,7 +12,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"clean": "npx -y rimraf build dist .svelte-kit node_modules",
-		"npm:publish": "npm version patch && npm run clean && npm ci && npm run build && npm publish"
+		"npm:publish": "npm run clean && npm ci && npm run build && npm version patch && npm publish"
 	},
 	"exports": {
 		".": {
