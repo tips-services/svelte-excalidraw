@@ -4,6 +4,8 @@
 
 ### Thin Svelte wrapper around [Excalidraw](https://github.com/excalidraw/excalidraw), the virtual whiteboard for sketching hand-drawn like diagrams.
 
+[Try it in SvelteLab](https://www.sveltelab.dev/yo9bz95u2mwe5m6)
+
 ## Installation
 
 ```bash
